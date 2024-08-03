@@ -1,6 +1,6 @@
 var builder = WebApplication.CreateBuilder(args);
 
-// add CORS
+// add CORS 
 builder.Services.AddCors(options => {
     options.AddPolicy("AllowSpecificOrigin", 
         builder => builder.WithOrigins("http://localhost:3000")
